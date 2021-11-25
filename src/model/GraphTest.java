@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.junit.experimental.theories.suppliers.TestedOn;
 
 import java.util.ArrayList;
 
@@ -68,4 +69,39 @@ public class GraphTest {
         assertEquals(arr,orderInDfs);
 
     }
+
+    @Test
+    public void floydTest(){
+        Graph g = setupStage1();
+        int graph[][] = { {0,   5,  g.getFloydNumber(), 10},
+                {g.getFloydNumber(), 0,   3, g.getFloydNumber()},
+                {g.getFloydNumber(), g.getFloydNumber(), 0,   1},
+                {g.getFloydNumber(), g.getFloydNumber(), g.getFloydNumber(), 0}};
+        int graph2[][] = { {0,   5,  8, 9},
+                {g.getFloydNumber(), 0,   3, 4},
+                {g.getFloydNumber(), g.getFloydNumber(), 0,   1},
+                {g.getFloydNumber(), g.getFloydNumber(), g.getFloydNumber(), 0}};
+        assertArrayEquals(graph2,g.floydWarshall(graph));
+    }
+
+    @Test
+    public void primAlgorithmTest(){
+        Graph g = setupStage1();
+        int graph[][] = new int[][] { { 0, 2, 0, 6, 0 },
+                { 2, 0, 3, 8, 5 },
+                { 0, 3, 0, 0, 7 },
+                { 6, 8, 0, 0, 9 },
+                { 0, 5, 7, 9, 0 } };
+        int graph2[][] = { {0,1,2},
+                {1,2,3},
+                {0,2,3},
+                {1,4,5}};
+        g.primAlgorithm(graph);
+        int graphExpected[][] = { {0,1,2},
+                {1,2,3},
+                {0,2,3},
+                {1,4,5}};
+        assertArrayEquals(graph2,graphExpected);
+    }
+
 }
