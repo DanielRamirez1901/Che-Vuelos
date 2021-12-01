@@ -1,3 +1,5 @@
+package Collections;
+
 import java.util.Comparator;
 
 public class Node<T,Integer> implements Comparator<Node>{

@@ -1,3 +1,5 @@
+package Collections;
+
 import java.util.*;
 
 public class Graph<T> {
@@ -94,7 +96,7 @@ public class Graph<T> {
             Node<T,Integer> u = pq.remove();
             if (settled.contains(u.getNode()))
 
-            settled.add(u.getNode());
+                settled.add(u.getNode());
 
             e_Neighbours(u.getCost());
         }
@@ -291,4 +293,3 @@ public class Graph<T> {
         return floydNumber;
     }
 }
-

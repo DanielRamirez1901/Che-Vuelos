@@ -1,8 +1,8 @@
+package Collections;
+
 import org.junit.Test;
 import org.junit.experimental.theories.suppliers.TestedOn;
-
 import java.util.ArrayList;
-
 import static org.junit.Assert.*;
 
 public class GraphTest {
@@ -11,7 +11,7 @@ public class GraphTest {
         return new Graph<T>(4);
     }
     public <T> Graph<T> setupStage2(){
-        Graph<T> graph = new Graph<>(6);
+        Graph<T> graph = new Graph<T>(6);
         graph.addEdge(0,1);
         graph.addEdge(0,2);
         graph.addEdge(1,2);
