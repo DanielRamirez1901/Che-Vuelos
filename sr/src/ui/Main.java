@@ -27,6 +27,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("InterfazInicial.fxml"));
 
         fxmlLoader.setController(cheVuelosGui);
@@ -38,5 +39,6 @@ public class Main extends Application {
         primaryStage.setTitle("Che Vuelos");
         primaryStage.setResizable(false);
         primaryStage.show();
+
     }
 }

@@ -151,4 +151,39 @@ public class CheVuelosGUI {
         form.showAndWait();
 
     }
+
+    @FXML
+    public void loadInterfazVariasCiudades(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("InterfazVariasCiudades.fxml"));
+        fxmlLoader.setController(this);
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root, null);
+        Stage form = new Stage();
+        form.initModality(Modality.APPLICATION_MODAL);
+        form.setTitle("Seleccion de ciudades");
+        form.setScene(scene);
+        form.setResizable(false);
+        form.getIcons().add(new Image("/ui/ImagesInterfaces/icono.jpg"));
+        form.showAndWait();
+
+    }
+
+    @FXML
+    public void loadInterfazCreditos(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("InterfazCreditos.fxml"));
+        fxmlLoader.setController(this);
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root, null);
+        Stage form = new Stage();
+        form.initModality(Modality.APPLICATION_MODAL);
+        form.setTitle("Seleccion de ciudades");
+        form.setScene(scene);
+        form.setResizable(false);
+        form.getIcons().add(new Image("/ui/ImagesInterfaces/icono.jpg"));
+        form.showAndWait();
+
+    }
+
 }
