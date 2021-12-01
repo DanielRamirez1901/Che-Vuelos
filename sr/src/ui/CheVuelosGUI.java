@@ -4,8 +4,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.CheVuelos;
 
@@ -45,6 +48,90 @@ public class CheVuelosGUI {
         st.setWidth(1000);
         st.setHeight(638);
 
+    }
+
+    @FXML
+    public void loadInterfazCali(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("InterfazCali.fxml"));
+        fxmlLoader.setController(this);
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root, null);
+        Stage form = new Stage();
+        form.initModality(Modality.APPLICATION_MODAL);
+        form.setTitle("Informacion de ciudad");
+        form.setScene(scene);
+        form.setResizable(false);
+        form.getIcons().add(new Image("/ui/ImagesInterfaces/icono.jpg"));
+        form.showAndWait();
+
+    }
+
+    @FXML
+    public void loadInterfazMedellin(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("InterfazMedellin.fxml"));
+        fxmlLoader.setController(this);
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root, null);
+        Stage form = new Stage();
+        form.initModality(Modality.APPLICATION_MODAL);
+        form.setTitle("Informacion de ciudad");
+        form.setScene(scene);
+        form.setResizable(false);
+        form.getIcons().add(new Image("/ui/ImagesInterfaces/icono.jpg"));
+        form.showAndWait();
+
+    }
+
+    @FXML
+    public void loadInterfazPasto(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("InterfazPasto.fxml"));
+        fxmlLoader.setController(this);
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root, null);
+        Stage form = new Stage();
+        form.initModality(Modality.APPLICATION_MODAL);
+        form.setTitle("Informacion de ciudad");
+        form.setScene(scene);
+        form.setResizable(false);
+        form.getIcons().add(new Image("/ui/ImagesInterfaces/icono.jpg"));
+        form.showAndWait();
+
+    }
+
+    @FXML
+    public void loadInterfazBogota(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("InterfazBogota.fxml"));
+        fxmlLoader.setController(this);
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root, null);
+        Stage form = new Stage();
+        form.initModality(Modality.APPLICATION_MODAL);
+        form.setTitle("Informacion de ciudad");
+        form.setScene(scene);
+        form.setResizable(false);
+        form.getIcons().add(new Image("/ui/ImagesInterfaces/icono.jpg"));
+        form.showAndWait();
+
+    }
+
+    @FXML
+    public void loadInterfazTolima(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("InterfazTolima.fxml"));
+        fxmlLoader.setController(this);
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root, null);
+        Stage form = new Stage();
+        form.initModality(Modality.APPLICATION_MODAL);
+        form.setTitle("Informacion de ciudad");
+        form.setScene(scene);
+        form.setResizable(false);
+        form.getIcons().add(new Image("/ui/ImagesInterfaces/icono.jpg"));
+        form.showAndWait();
 
     }
 }

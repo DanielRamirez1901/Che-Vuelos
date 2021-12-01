@@ -13,13 +13,13 @@
             <Image url="@ImagesInterfaces/Menu.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="703.0" layoutY="26.0" mnemonicParsing="false" opacity="0.0" prefHeight="91.0" prefWidth="88.0" />
-      <Button layoutX="703.0" layoutY="329.0" mnemonicParsing="false" opacity="0.0" prefHeight="91.0" prefWidth="88.0" />
-      <Button layoutX="382.0" layoutY="329.0" mnemonicParsing="false" opacity="0.0" prefHeight="91.0" prefWidth="88.0" />
-      <Button layoutX="136.0" layoutY="185.0" mnemonicParsing="false" opacity="0.0" prefHeight="91.0" prefWidth="95.0" />
+      <Button layoutX="703.0" layoutY="26.0" mnemonicParsing="false" onAction="#loadInterfazTolima" opacity="0.0" prefHeight="91.0" prefWidth="88.0" />
+      <Button layoutX="703.0" layoutY="329.0" mnemonicParsing="false" onAction="#loadInterfazPasto" opacity="0.0" prefHeight="91.0" prefWidth="88.0" />
+      <Button layoutX="382.0" layoutY="329.0" mnemonicParsing="false" onAction="#loadInterfazBogota" opacity="0.0" prefHeight="91.0" prefWidth="88.0" />
+      <Button layoutX="136.0" layoutY="185.0" mnemonicParsing="false" onAction="#loadInterfazCali" opacity="0.0" prefHeight="91.0" prefWidth="95.0" />
       <Button layoutX="432.0" layoutY="543.0" mnemonicParsing="false" onAction="#loadInterfazInicial" opacity="0.0" prefHeight="51.0" prefWidth="136.0" />
       <Button layoutX="60.0" layoutY="543.0" mnemonicParsing="false" opacity="0.0" prefHeight="51.0" prefWidth="136.0" />
       <Button layoutX="784.0" layoutY="549.0" mnemonicParsing="false" opacity="0.0" prefHeight="51.0" prefWidth="185.0" />
-      <Button layoutX="390.0" layoutY="26.0" mnemonicParsing="false" opacity="0.0" prefHeight="91.0" prefWidth="80.0" />
+      <Button layoutX="390.0" layoutY="26.0" mnemonicParsing="false" onAction="#loadInterfazMedellin" opacity="0.0" prefHeight="91.0" prefWidth="80.0" />
    </children>
 </AnchorPane>
